@@ -73,7 +73,7 @@ uploadBtn.addEventListener('click', async () => {
         uploadBtn.textContent = 'Uploading...';
 
         const token = getToken();
-        const response = await fetch('http://localhost:5000/api/products/upload', {
+        const response = await fetch('https://denamd-forecast.onrender.com/api/products/uplo', {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${token}`

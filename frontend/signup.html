@@ -76,7 +76,7 @@
             logDebug('Page loaded. Checking server...');
             try {
                 const start = Date.now();
-                const res = await fetch('https://denamd-forecast.onrender.com/api/health=' + start);
+                const res = await fetch('https://denamd-forecast.onrender.com/health?t=' + start);
                 logDebug('Server health check: ' + res.status);
             } catch (e) {
                 logDebug('ERROR: Cannot reach server! ' + e.message);
